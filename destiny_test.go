@@ -8,7 +8,7 @@ import (
 	"github.com/mcollinge/cryptarch/destiny/definitions"
 )
 
-const apiKey = "apiKey"
+const apiKey = "apikey"
 
 func TestSearchPlayer(t *testing.T) {
 	bungieService := cryptarch.NewBungieService(apiKey)

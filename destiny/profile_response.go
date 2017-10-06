@@ -16,7 +16,7 @@ type Profile struct {
 	ProfileKiosks interface{} `json:"profileKiosks,omitempty"`
 	// Basic information about each character, keyed by the CharacterId.  COMPONENT TYPE: Characters
 	Characters struct {
-		Data map[string]definitions.CharacterComponent `json:"data,omitempty"`
+		Data map[int64]definitions.CharacterComponent `json:"data,omitempty,string"`
 	} `json:"characters,omitempty"`
 	// The character-level non-equipped inventory items, keyed by the Character's Id.  COMPONENT TYPE: CharacterInventories
 	CharacterInventories interface{} `json:"characterInventories,omitempty"`
